@@ -1,8 +1,8 @@
 <?php
 
-namespace Overtrue\Socialite\Exceptions\Feishu;
+namespace Iphpjs\Socialite\Exceptions\Feishu;
 
-use Overtrue\Socialite\Exceptions\Exception;
+use Iphpjs\Socialite\Exceptions\Exception;
 
 /**
  * Class BadRequestException.

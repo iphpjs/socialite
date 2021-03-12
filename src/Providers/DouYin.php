@@ -1,10 +1,10 @@
 <?php
 
-namespace Overtrue\Socialite\Providers;
+namespace Iphpjs\Socialite\Providers;
 
-use Overtrue\Socialite\Exceptions\AuthorizeFailedException;
-use Overtrue\Socialite\Exceptions\InvalidArgumentException;
-use Overtrue\Socialite\User;
+use Iphpjs\Socialite\Exceptions\AuthorizeFailedException;
+use Iphpjs\Socialite\Exceptions\InvalidArgumentException;
+use Iphpjs\Socialite\User;
 
 /**
  * @see http://open.douyin.com/platform
@@ -44,7 +44,7 @@ class DouYin extends Base
      * @param  string  $code
      *
      * @return array
-     * @throws \Overtrue\Socialite\Exceptions\AuthorizeFailedException
+     * @throws \Iphpjs\Socialite\Exceptions\AuthorizeFailedException
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      */
@@ -87,7 +87,7 @@ class DouYin extends Base
      * @param  string  $token
      *
      * @return array
-     * @throws \Overtrue\Socialite\Exceptions\InvalidArgumentException
+     * @throws \Iphpjs\Socialite\Exceptions\InvalidArgumentException
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
      */
@@ -115,7 +115,7 @@ class DouYin extends Base
     /**
      * @param array $user
      *
-     * @return \Overtrue\Socialite\User
+     * @return \Iphpjs\Socialite\User
      */
     protected function mapUserToObject(array $user): User
     {

@@ -1,6 +1,8 @@
 {
-  "name": "overtrue/socialite",
+  "name": "iphpjs/socialite",
   "description": "A collection of OAuth 2 packages.",
+  "type":"library",
+  "version":"3.2.1",
   "keywords": [
     "oauth",
     "social",
@@ -13,7 +15,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Overtrue\\Socialite\\": "src/"
+      "Iphpjs\\Socialite\\": "src/"
     }
   },
   "require": {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Overtrue\Socialite\Providers;
+namespace Iphpjs\Socialite\Providers;
 
-use Overtrue\Socialite\User;
+use Iphpjs\Socialite\User;
 
 class GitHub extends Base
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Overtrue\Socialite\Providers;
+namespace Iphpjs\Socialite\Providers;
 
-use Overtrue\Socialite\User;
+use Iphpjs\Socialite\User;
 
 /**
  * “第三方个人应用”获取用户信息
@@ -41,7 +41,7 @@ class DingTalk extends Base
     /**
      * @param array $user
      *
-     * @return \Overtrue\Socialite\User
+     * @return \Iphpjs\Socialite\User
      */
     protected function mapUserToObject(array $user): User
     {

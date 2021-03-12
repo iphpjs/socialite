@@ -1,6 +1,6 @@
 <?php
 
-namespace Overtrue\Socialite\Traits;
+namespace Iphpjs\Socialite\Traits;
 
 trait HasAttributes
 {

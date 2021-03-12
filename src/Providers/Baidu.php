@@ -1,8 +1,8 @@
 <?php
 
-namespace Overtrue\Socialite\Providers;
+namespace Iphpjs\Socialite\Providers;
 
-use Overtrue\Socialite\User;
+use Iphpjs\Socialite\User;
 
 /**
  * @see https://developer.baidu.com/wiki/index.php?title=docs/oauth [OAuth 2.0 授权机制说明]
@@ -102,7 +102,7 @@ class Baidu extends Base
     /**
      * @param array $user
      *
-     * @return \Overtrue\Socialite\User
+     * @return \Iphpjs\Socialite\User
      */
     protected function mapUserToObject(array $user): User
     {

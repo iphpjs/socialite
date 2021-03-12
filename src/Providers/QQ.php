@@ -1,8 +1,8 @@
 <?php
 
-namespace Overtrue\Socialite\Providers;
+namespace Iphpjs\Socialite\Providers;
 
-use Overtrue\Socialite\User;
+use Iphpjs\Socialite\User;
 
 /**
  * @see http://wiki.connect.qq.com/oauth2-0%E7%AE%80%E4%BB%8B [QQ - OAuth 2.0 登录QQ]
@@ -40,7 +40,7 @@ class QQ extends Base
      * @param  string  $code
      *
      * @return array
-     * @throws \Overtrue\Socialite\Exceptions\AuthorizeFailedException
+     * @throws \Iphpjs\Socialite\Exceptions\AuthorizeFailedException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function tokenFromCode(string $code): array
@@ -94,7 +94,7 @@ class QQ extends Base
     /**
      * @param array $user
      *
-     * @return \Overtrue\Socialite\User
+     * @return \Iphpjs\Socialite\User
      */
     protected function mapUserToObject(array $user): User
     {

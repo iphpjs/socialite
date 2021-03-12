@@ -1,6 +1,6 @@
 <?php
 
-namespace Overtrue\Socialite;
+namespace Iphpjs\Socialite;
 
 use ArrayAccess;
 use InvalidArgumentException;

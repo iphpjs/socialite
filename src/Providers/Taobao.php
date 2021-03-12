@@ -1,8 +1,8 @@
 <?php
 
-namespace Overtrue\Socialite\Providers;
+namespace Iphpjs\Socialite\Providers;
 
-use Overtrue\Socialite\User;
+use Iphpjs\Socialite\User;
 
 /**
  * @see https://open.taobao.com/doc.htm?docId=102635&docType=1&source=search [Taobao - OAuth 2.0 授权登录]
@@ -57,7 +57,7 @@ class Taobao extends Base
      *
      * @return array
      * @throws \GuzzleHttp\Exception\GuzzleException
-     * @throws \Overtrue\Socialite\Exceptions\AuthorizeFailedException
+     * @throws \Iphpjs\Socialite\Exceptions\AuthorizeFailedException
      */
     public function tokenFromCode(string $code): array
     {
@@ -85,7 +85,7 @@ class Taobao extends Base
     /**
      * @param array $user
      *
-     * @return \Overtrue\Socialite\User
+     * @return \Iphpjs\Socialite\User
      */
     protected function mapUserToObject(array $user): User
     {

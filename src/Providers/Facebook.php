@@ -1,8 +1,8 @@
 <?php
 
-namespace Overtrue\Socialite\Providers;
+namespace Iphpjs\Socialite\Providers;
 
-use Overtrue\Socialite\User;
+use Iphpjs\Socialite\User;
 
 /**
  * @see https://developers.facebook.com/docs/graph-api [Facebook - Graph API]
@@ -31,7 +31,7 @@ class Facebook extends Base
      *
      * @return array
      * @throws \GuzzleHttp\Exception\GuzzleException
-     * @throws \Overtrue\Socialite\Exceptions\AuthorizeFailedException
+     * @throws \Iphpjs\Socialite\Exceptions\AuthorizeFailedException
      */
     public function tokenFromCode(string $code): array
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Overtrue\Socialite\Exceptions;
+namespace Iphpjs\Socialite\Exceptions;
 
 class AuthorizeFailedException extends Exception
 {

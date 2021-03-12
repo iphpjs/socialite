@@ -1,11 +1,11 @@
 <?php
 
-namespace Overtrue\Socialite\Providers;
+namespace Iphpjs\Socialite\Providers;
 
 use GuzzleHttp\Psr7\Stream;
-use Overtrue\Socialite\Exceptions\AuthorizeFailedException;
-use Overtrue\Socialite\Exceptions\BadRequestException;
-use Overtrue\Socialite\User;
+use Iphpjs\Socialite\Exceptions\AuthorizeFailedException;
+use Iphpjs\Socialite\Exceptions\BadRequestException;
+use Iphpjs\Socialite\User;
 
 /**
  * @see https://www.tapd.cn/help/show#1120003271001000708
@@ -43,7 +43,7 @@ class Tapd extends Base
      * @param  string  $code
      *
      * @return array
-     * @throws \Overtrue\Socialite\Exceptions\AuthorizeFailedException
+     * @throws \Iphpjs\Socialite\Exceptions\AuthorizeFailedException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function tokenFromCode($code): array
@@ -93,7 +93,7 @@ class Tapd extends Base
      * @return array
      *
      * @throws \GuzzleHttp\Exception\GuzzleException
-     * @throws \Overtrue\Socialite\Exceptions\AuthorizeFailedException
+     * @throws \Iphpjs\Socialite\Exceptions\AuthorizeFailedException
      */
     public function tokenFromRefreshToken(string $refreshToken): array
     {
@@ -130,9 +130,9 @@ class Tapd extends Base
     /**
      * @param array $user
      *
-     * @return \Overtrue\Socialite\User
+     * @return \Iphpjs\Socialite\User
      *
-     * @throws \Overtrue\Socialite\Exceptions\BadRequestException
+     * @throws \Iphpjs\Socialite\Exceptions\BadRequestException
      */
     protected function mapUserToObject(array $user): User
     {
@@ -154,7 +154,7 @@ class Tapd extends Base
      *
      * @return mixed
      * @return array
-     * @throws \Overtrue\Socialite\Exceptions\AuthorizeFailedException
+     * @throws \Iphpjs\Socialite\Exceptions\AuthorizeFailedException
      *
      */
     protected function normalizeAccessTokenResponse($response): array

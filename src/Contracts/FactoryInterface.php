@@ -1,13 +1,13 @@
 <?php
 
-namespace Overtrue\Socialite\Contracts;
+namespace Iphpjs\Socialite\Contracts;
 
 interface FactoryInterface
 {
     /**
      * @param string $driver
      *
-     * @return \Overtrue\Socialite\Contracts\ProviderInterface
+     * @return \Iphpjs\Socialite\Contracts\ProviderInterface
      */
     public function create(string $driver): ProviderInterface;
 }

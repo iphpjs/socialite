@@ -1,8 +1,8 @@
 <?php
 
-namespace Overtrue\Socialite\Contracts;
+namespace Iphpjs\Socialite\Contracts;
 
-use Overtrue\Socialite\User;
+use Iphpjs\Socialite\User;
 
 interface ProviderInterface
 {

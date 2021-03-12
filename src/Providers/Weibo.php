@@ -1,9 +1,9 @@
 <?php
 
-namespace Overtrue\Socialite\Providers;
+namespace Iphpjs\Socialite\Providers;
 
-use Overtrue\Socialite\Exceptions\InvalidTokenException;
-use Overtrue\Socialite\User;
+use Iphpjs\Socialite\Exceptions\InvalidTokenException;
+use Iphpjs\Socialite\User;
 
 /**
  * @see http://open.weibo.com/wiki/%E6%8E%88%E6%9D%83%E6%9C%BA%E5%88%B6%E8%AF%B4%E6%98%8E [OAuth 2.0 授权机制说明]
@@ -40,7 +40,7 @@ class Weibo extends Base
      * @return array
      * @throws \GuzzleHttp\Exception\GuzzleException
      *
-     * @throws \Overtrue\Socialite\Exceptions\InvalidTokenException
+     * @throws \Iphpjs\Socialite\Exceptions\InvalidTokenException
      */
     protected function getUserByToken(string $token): array
     {
@@ -68,7 +68,7 @@ class Weibo extends Base
      *
      * @return array
      * @throws \GuzzleHttp\Exception\GuzzleException
-     * @throws \Overtrue\Socialite\Exceptions\InvalidTokenException
+     * @throws \Iphpjs\Socialite\Exceptions\InvalidTokenException
      */
     protected function getTokenPayload(string $token): array
     {
@@ -93,7 +93,7 @@ class Weibo extends Base
     /**
      * @param array $user
      *
-     * @return \Overtrue\Socialite\User
+     * @return \Iphpjs\Socialite\User
      */
     protected function mapUserToObject(array $user): User
     {

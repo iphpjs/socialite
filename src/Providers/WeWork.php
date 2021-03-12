@@ -1,11 +1,11 @@
 <?php
 
-namespace Overtrue\Socialite\Providers;
+namespace Iphpjs\Socialite\Providers;
 
-use Overtrue\Socialite\Exceptions\AuthorizeFailedException;
-use Overtrue\Socialite\Exceptions\InvalidArgumentException;
-use Overtrue\Socialite\Exceptions\MethodDoesNotSupportException;
-use Overtrue\Socialite\User;
+use Iphpjs\Socialite\Exceptions\AuthorizeFailedException;
+use Iphpjs\Socialite\Exceptions\InvalidArgumentException;
+use Iphpjs\Socialite\Exceptions\MethodDoesNotSupportException;
+use Iphpjs\Socialite\User;
 
 class WeWork extends Base
 {
@@ -59,7 +59,7 @@ class WeWork extends Base
 
     /**
      * @return string
-     * @throws \Overtrue\Socialite\Exceptions\InvalidArgumentException
+     * @throws \Iphpjs\Socialite\Exceptions\InvalidArgumentException
      */
     public function getAuthUrl(): string
     {
@@ -105,7 +105,7 @@ class WeWork extends Base
      * @param string $token
      *
      * @return array
-     * @throws \Overtrue\Socialite\Exceptions\MethodDoesNotSupportException
+     * @throws \Iphpjs\Socialite\Exceptions\MethodDoesNotSupportException
      */
     protected function getUserByToken(string $token): array
     {
@@ -122,7 +122,7 @@ class WeWork extends Base
      * @param  string  $code
      *
      * @return array
-     * @throws \Overtrue\Socialite\Exceptions\AuthorizeFailedException
+     * @throws \Iphpjs\Socialite\Exceptions\AuthorizeFailedException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     protected function getUserId(string $token, string $code): array
@@ -154,7 +154,7 @@ class WeWork extends Base
      * @param  string  $userId
      *
      * @return array
-     * @throws \Overtrue\Socialite\Exceptions\AuthorizeFailedException
+     * @throws \Iphpjs\Socialite\Exceptions\AuthorizeFailedException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     protected function getUserById(string $userId): array
@@ -181,7 +181,7 @@ class WeWork extends Base
     /**
      * @param array $user
      *
-     * @return \Overtrue\Socialite\User
+     * @return \Iphpjs\Socialite\User
      */
     protected function mapUserToObject(array $user): User
     {
@@ -205,7 +205,7 @@ class WeWork extends Base
 
     /**
      * @return string
-     * @throws \Overtrue\Socialite\Exceptions\AuthorizeFailedException
+     * @throws \Iphpjs\Socialite\Exceptions\AuthorizeFailedException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     protected function createApiAccessToken(): string

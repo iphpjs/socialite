@@ -1,14 +1,14 @@
 <?php
 
-namespace Overtrue\Socialite\Providers;
+namespace Iphpjs\Socialite\Providers;
 
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Psr7\Stream;
-use Overtrue\Socialite\Config;
-use Overtrue\Socialite\Contracts\ProviderInterface;
-use Overtrue\Socialite\Exceptions\AuthorizeFailedException;
-use Overtrue\Socialite\Exceptions\MethodDoesNotSupportException;
-use Overtrue\Socialite\User;
+use Iphpjs\Socialite\Config;
+use Iphpjs\Socialite\Contracts\ProviderInterface;
+use Iphpjs\Socialite\Exceptions\AuthorizeFailedException;
+use Iphpjs\Socialite\Exceptions\MethodDoesNotSupportException;
+use Iphpjs\Socialite\User;
 
 abstract class Base implements ProviderInterface
 {
@@ -80,8 +80,8 @@ abstract class Base implements ProviderInterface
     /**
      * @param string $code
      *
-     * @return \Overtrue\Socialite\User
-     * @throws \Overtrue\Socialite\Exceptions\AuthorizeFailedException
+     * @return \Iphpjs\Socialite\User
+     * @throws \Iphpjs\Socialite\Exceptions\AuthorizeFailedException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function userFromCode(string $code): User
@@ -97,7 +97,7 @@ abstract class Base implements ProviderInterface
     /**
      * @param string $token
      *
-     * @return \Overtrue\Socialite\User
+     * @return \Iphpjs\Socialite\User
      */
     public function userFromToken(string $token): User
     {
@@ -110,7 +110,7 @@ abstract class Base implements ProviderInterface
      * @param string $code
      *
      * @return array
-     * @throws \Overtrue\Socialite\Exceptions\AuthorizeFailedException|\GuzzleHttp\Exception\GuzzleException
+     * @throws \Iphpjs\Socialite\Exceptions\AuthorizeFailedException|\GuzzleHttp\Exception\GuzzleException
      */
     public function tokenFromCode(string $code): array
     {
@@ -130,7 +130,7 @@ abstract class Base implements ProviderInterface
     /**
      * @param string $refreshToken
      *
-     * @throws \Overtrue\Socialite\Exceptions\MethodDoesNotSupportException
+     * @throws \Iphpjs\Socialite\Exceptions\MethodDoesNotSupportException
      */
     public function refreshToken(string $refreshToken)
     {
@@ -140,7 +140,7 @@ abstract class Base implements ProviderInterface
     /**
      * @param string $redirectUrl
      *
-     * @return $this|\Overtrue\Socialite\Contracts\ProviderInterface
+     * @return $this|\Iphpjs\Socialite\Contracts\ProviderInterface
      */
     public function withRedirectUrl(string $redirectUrl): ProviderInterface
     {
@@ -152,7 +152,7 @@ abstract class Base implements ProviderInterface
     /**
      * @param string $state
      *
-     * @return \Overtrue\Socialite\Contracts\ProviderInterface
+     * @return \Iphpjs\Socialite\Contracts\ProviderInterface
      */
     public function withState(string $state): ProviderInterface
     {
@@ -220,7 +220,7 @@ abstract class Base implements ProviderInterface
     /**
      * @param array $config
      *
-     * @return \Overtrue\Socialite\Contracts\ProviderInterface
+     * @return \Iphpjs\Socialite\Contracts\ProviderInterface
      */
     public function setGuzzleOptions($config = []): ProviderInterface
     {
@@ -296,7 +296,7 @@ abstract class Base implements ProviderInterface
      *
      * @return mixed
      * @return array
-     * @throws \Overtrue\Socialite\Exceptions\AuthorizeFailedException
+     * @throws \Iphpjs\Socialite\Exceptions\AuthorizeFailedException
      *
      */
     protected function normalizeAccessTokenResponse($response): array

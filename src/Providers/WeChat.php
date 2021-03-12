@@ -1,9 +1,9 @@
 <?php
 
-namespace Overtrue\Socialite\Providers;
+namespace Iphpjs\Socialite\Providers;
 
-use Overtrue\Socialite\Exceptions\InvalidArgumentException;
-use Overtrue\Socialite\User;
+use Iphpjs\Socialite\Exceptions\InvalidArgumentException;
+use Iphpjs\Socialite\User;
 use Psr\Http\Message\ResponseInterface;
 
 /**
@@ -48,7 +48,7 @@ class WeChat extends Base
      * @param  string  $code
      *
      * @return array
-     * @throws \Overtrue\Socialite\Exceptions\AuthorizeFailedException
+     * @throws \Iphpjs\Socialite\Exceptions\AuthorizeFailedException
      */
     public function tokenFromCode(string $code): array
     {
@@ -60,7 +60,7 @@ class WeChat extends Base
     /**
      * @param  array  $componentConfig  ['id' => xxx, 'token' => xxx]
      *
-     * @return \Overtrue\Socialite\Providers\WeChat
+     * @return \Iphpjs\Socialite\Providers\WeChat
      */
     public function withComponent(array $componentConfig)
     {
@@ -126,8 +126,8 @@ class WeChat extends Base
     /**
      * @param string $code
      *
-     * @return \Overtrue\Socialite\User
-     * @throws \Overtrue\Socialite\Exceptions\AuthorizeFailedException
+     * @return \Iphpjs\Socialite\User
+     * @throws \Iphpjs\Socialite\Exceptions\AuthorizeFailedException
      */
     public function userFromCode(string $code): User
     {
@@ -169,7 +169,7 @@ class WeChat extends Base
     /**
      * @param array $user
      *
-     * @return \Overtrue\Socialite\User
+     * @return \Iphpjs\Socialite\User
      */
     protected function mapUserToObject(array $user): User
     {

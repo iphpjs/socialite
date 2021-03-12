@@ -1,19 +1,19 @@
 <?php
 
-namespace Overtrue\Socialite;
+namespace Iphpjs\Socialite;
 
 use ArrayAccess;
 use JsonSerializable;
-use Overtrue\Socialite\Contracts\ProviderInterface;
-use Overtrue\Socialite\Contracts\UserInterface;
-use Overtrue\Socialite\Traits\HasAttributes;
+use Iphpjs\Socialite\Contracts\ProviderInterface;
+use Iphpjs\Socialite\Contracts\UserInterface;
+use Iphpjs\Socialite\Traits\HasAttributes;
 
 class User implements ArrayAccess, UserInterface, JsonSerializable, \Serializable
 {
     use HasAttributes;
 
     /**
-     * @var \Overtrue\Socialite\Contracts\ProviderInterface|null
+     * @var \Iphpjs\Socialite\Contracts\ProviderInterface|null
      */
     protected ?ProviderInterface $provider;
 
@@ -124,19 +124,19 @@ class User implements ArrayAccess, UserInterface, JsonSerializable, \Serializabl
     }
 
     /**
-     * @return \Overtrue\Socialite\Contracts\ProviderInterface
+     * @return \Iphpjs\Socialite\Contracts\ProviderInterface
      */
-    public function getProvider(): \Overtrue\Socialite\Contracts\ProviderInterface
+    public function getProvider(): \Iphpjs\Socialite\Contracts\ProviderInterface
     {
         return $this->provider;
     }
 
     /**
-     * @param \Overtrue\Socialite\Contracts\ProviderInterface $provider
+     * @param \Iphpjs\Socialite\Contracts\ProviderInterface $provider
      *
      * @return $this
      */
-    public function setProvider(\Overtrue\Socialite\Contracts\ProviderInterface $provider)
+    public function setProvider(\Iphpjs\Socialite\Contracts\ProviderInterface $provider)
     {
         $this->provider = $provider;
 

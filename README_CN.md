@@ -252,6 +252,9 @@ $config = [
     // 确保这里的值与你在服务后台绑定的地址值一致
     // 这个键名还能像官方文档那样叫做 'redirect_url'
     'redirect' => 'http://localhost/socialite/callback.php',
+    
+    'alipay_root_cert_sn' => '687b59193f3f433dd5336e5abf83c5d8_02941eef3187dddf3d3b83462e1dfcf6',
+    'app_cert_sn' => '14bba46bcfe24548a3bc5f46f2dd5903',
   ]
   ...
 ];

@@ -1,6 +1,6 @@
 <?php
 
-namespace Overtrue\Socialite\Contracts;
+namespace Iphpjs\Socialite\Contracts;
 
 interface UserInterface
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Overtrue\Socialite\Providers;
+namespace Iphpjs\Socialite\Providers;
 
 use GuzzleHttp\Exception\GuzzleException;
-use Overtrue\Socialite\Exceptions\AuthorizeFailedException;
-use Overtrue\Socialite\Exceptions\BadRequestException;
-use Overtrue\Socialite\Exceptions\Feishu\InvalidTicketException;
-use Overtrue\Socialite\Exceptions\InvalidTokenException;
-use Overtrue\Socialite\User;
+use Iphpjs\Socialite\Exceptions\AuthorizeFailedException;
+use Iphpjs\Socialite\Exceptions\BadRequestException;
+use Iphpjs\Socialite\Exceptions\Feishu\InvalidTicketException;
+use Iphpjs\Socialite\Exceptions\InvalidTokenException;
+use Iphpjs\Socialite\User;
 
 /**
  * @see https://open.feishu.cn/document/uQjL04CN/ucDOz4yN4MjL3gzM

@@ -1,9 +1,9 @@
 <?php
 
-namespace Overtrue\Socialite\Providers;
+namespace Iphpjs\Socialite\Providers;
 
-use Overtrue\Socialite\Exceptions\InvalidArgumentException;
-use Overtrue\Socialite\User;
+use Iphpjs\Socialite\Exceptions\InvalidArgumentException;
+use Iphpjs\Socialite\User;
 
 /**
  * @see https://opendocs.alipay.com/open/289/105656
@@ -32,7 +32,7 @@ class Alipay extends Base
      * @param  string  $token
      *
      * @return array
-     * @throws \Overtrue\Socialite\Exceptions\InvalidArgumentException
+     * @throws \Iphpjs\Socialite\Exceptions\InvalidArgumentException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     protected function getUserByToken(string $token): array
@@ -63,7 +63,7 @@ class Alipay extends Base
     /**
      * @param array $user
      *
-     * @return \Overtrue\Socialite\User
+     * @return \Iphpjs\Socialite\User
      */
     protected function mapUserToObject(array $user): User
     {
@@ -82,8 +82,8 @@ class Alipay extends Base
      *
      * @return array
      * @throws \GuzzleHttp\Exception\GuzzleException
-     * @throws \Overtrue\Socialite\Exceptions\AuthorizeFailedException
-     * @throws \Overtrue\Socialite\Exceptions\InvalidArgumentException
+     * @throws \Iphpjs\Socialite\Exceptions\AuthorizeFailedException
+     * @throws \Iphpjs\Socialite\Exceptions\InvalidArgumentException
      */
     public function tokenFromCode(string $code): array
     {
@@ -107,7 +107,7 @@ class Alipay extends Base
 
     /**
      * @return array
-     * @throws \Overtrue\Socialite\Exceptions\InvalidArgumentException
+     * @throws \Iphpjs\Socialite\Exceptions\InvalidArgumentException
      */
     protected function getCodeFields(): array
     {
@@ -131,7 +131,7 @@ class Alipay extends Base
      * @param string $code
      *
      * @return array|string[]
-     * @throws \Overtrue\Socialite\Exceptions\InvalidArgumentException
+     * @throws \Iphpjs\Socialite\Exceptions\InvalidArgumentException
      */
     protected function getTokenFields(string $code): array
     {
@@ -160,6 +160,8 @@ class Alipay extends Base
             'method' => $method,
             'timestamp' => date('Y-m-d H:m:s'),
             'version' => $this->apiVersion,
+            'alipay_root_cert_sn' => $this->getConfig()->get('alipay_root_cert_sn'),
+            'app_cert_sn' => $this->getConfig()->get('app_cert_sn'),
         ];
     }
 
@@ -187,7 +189,7 @@ class Alipay extends Base
      * @param string $key
      *
      * @return string
-     * @throws \Overtrue\Socialite\Exceptions\InvalidArgumentException
+     * @throws \Iphpjs\Socialite\Exceptions\InvalidArgumentException
      */
     protected function signWithSHA256RSA(string $signContent, string $key)
     {

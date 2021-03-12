@@ -1,10 +1,10 @@
 <?php
 
-namespace Overtrue\Socialite\Providers;
+namespace Iphpjs\Socialite\Providers;
 
-use Overtrue\Socialite\Contracts\ProviderInterface;
-use Overtrue\Socialite\Exceptions\AuthorizeFailedException;
-use Overtrue\Socialite\User;
+use Iphpjs\Socialite\Contracts\ProviderInterface;
+use Iphpjs\Socialite\Exceptions\AuthorizeFailedException;
+use Iphpjs\Socialite\User;
 
 class QCloud extends Base implements ProviderInterface
 {
@@ -45,7 +45,7 @@ class QCloud extends Base implements ProviderInterface
      * @param  string  $code
      *
      * @return array
-     * @throws \Overtrue\Socialite\Exceptions\AuthorizeFailedException
+     * @throws \Iphpjs\Socialite\Exceptions\AuthorizeFailedException
      */
     public function TokenFromCode(string $code): array
     {
@@ -68,7 +68,7 @@ class QCloud extends Base implements ProviderInterface
      * @param string $token
      *
      * @return array
-     * @throws \Overtrue\Socialite\Exceptions\AuthorizeFailedException
+     * @throws \Iphpjs\Socialite\Exceptions\AuthorizeFailedException
      */
     protected function getUserByToken(string $token): array
     {
@@ -92,7 +92,7 @@ class QCloud extends Base implements ProviderInterface
     /**
      * @param array $user
      *
-     * @return \Overtrue\Socialite\User
+     * @return \Iphpjs\Socialite\User
      */
     protected function mapUserToObject(array $user): User
     {
@@ -201,7 +201,7 @@ class QCloud extends Base implements ProviderInterface
      * @param string $accessToken
      *
      * @return mixed
-     * @throws \Overtrue\Socialite\Exceptions\AuthorizeFailedException
+     * @throws \Iphpjs\Socialite\Exceptions\AuthorizeFailedException
      */
     protected function getFederationToken(string $accessToken)
     {

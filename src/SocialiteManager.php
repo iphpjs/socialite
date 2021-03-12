@@ -1,11 +1,11 @@
 <?php
 
-namespace Overtrue\Socialite;
+namespace Iphpjs\Socialite;
 
 use Closure;
 use InvalidArgumentException;
-use Overtrue\Socialite\Contracts\FactoryInterface;
-use Overtrue\Socialite\Contracts\ProviderInterface;
+use Iphpjs\Socialite\Contracts\FactoryInterface;
+use Iphpjs\Socialite\Contracts\ProviderInterface;
 
 class SocialiteManager implements FactoryInterface
 {
@@ -38,7 +38,7 @@ class SocialiteManager implements FactoryInterface
     }
 
     /**
-     * @param \Overtrue\Socialite\Config $config
+     * @param \Iphpjs\Socialite\Config $config
      *
      * @return $this
      */
@@ -52,7 +52,7 @@ class SocialiteManager implements FactoryInterface
     /**
      * @param string $name
      *
-     * @return \Overtrue\Socialite\Contracts\ProviderInterface
+     * @return \Iphpjs\Socialite\Contracts\ProviderInterface
      */
     public function create(string $name): ProviderInterface
     {
@@ -79,7 +79,7 @@ class SocialiteManager implements FactoryInterface
     }
 
     /**
-     * @return \Overtrue\Socialite\Contracts\ProviderInterface[]
+     * @return \Iphpjs\Socialite\Contracts\ProviderInterface[]
      */
     public function getResolvedProviders(): array
     {
@@ -90,7 +90,7 @@ class SocialiteManager implements FactoryInterface
      * @param string $provider
      * @param array  $config
      *
-     * @return \Overtrue\Socialite\Contracts\ProviderInterface
+     * @return \Iphpjs\Socialite\Contracts\ProviderInterface
      */
     public function buildProvider(string $provider, array $config): ProviderInterface
     {
